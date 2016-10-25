@@ -58,7 +58,15 @@ public class Paddle extends Actor
      * arrow key being pressed
      */
     public void act() 
-    {       
+    {
+        if(Greenfoot.isKeyDown("left"))
+        {
+            move(-3);
+        }
+        if(Greenfoot.isKeyDown("right"))
+        {
+            move(3);
+        }
     }
     
     /**
